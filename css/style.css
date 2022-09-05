@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+}
+/* Mobile */
+@media screen and (min-width: 576px){
+    .container{
+        width: 375px;
+        margin: auto;
+    }
+    .content{
+        width: 370px;
+    }
+    .header .container .images .desktop-header{
+        display: none;
+    }
+    .header .container .images .mobile-header{
+        display: block;
+        width: 375px;
+        height: 150px;
+    }
+    .header .container .content .logo{
+        width: 100px;
+    }
+    button{
+        border-radius: 25px;
+        width: 300px;
+    }
+    .section .container .services{
+        display: inline;
+    }
+    .section .container .services img{
+        width: 350px;
+    }
+    .section .container .services .serv{
+        width: 350px;
+        text-align: center;
+    }
+    .section .container .second-content img{
+        width: 350px;
+    }
+    .features .container{
+        display: block;
+    }
+    .features .container .feat{
+        padding-bottom: 2rem;
+    }
+    .logo .container {
+        display:block;
+    }
+    .logo .container img{
+        padding-top: 4rem;
+        width: 200px;
+    }
+    footer .container{
+        display: block;
+    }
+    footer .container .logo{
+        margin-left: 2rem;
+    }
+    footer .container ul{
+        display: block;
+    }
+    footer .container ul li a{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 3;
+    }
+    footer .container .icons i{
+        margin-bottom: 2rem;
+    }
+}
+body{
+    text-align: center;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+    padding: auto;
+    margin: auto;
+}
+.content{
+    width: 700px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+.header .container .images .desktop-header{
+    display: block;
+}
+.header .container .images .mobile-header{
+    display: none;
+}
+.header .container .content{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 4rem;
+}
+.header .container .content .logo{
+    width: 50px;
+}
+button{
+    padding: 10px;
+    margin-top: 2rem;
+    margin-left: 15px;
+    border-radius: 20px;
+    width: 150px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+.btn-1{
+    background-color: hsl(171, 66%, 44%);
+    color: #fff;
+    border:1px ridge hsl(171, 66%, 44%);
+}
+.btn-2{
+    background-color: hsl(233, 100%, 69%);
+    color: #fff;
+    border:1px ridge hsl(233, 100%, 69%);
+}
+h1, h2, h3, h4{
+    color:  hsl(210, 10%, 33%);
+}
+p{
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+.section .container .first-content{
+    padding-top: 3rem;
+}
+.section .container .services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.section .container .services img{
+    width: 650px;
+}
+.section .container .services .serv{
+    margin-top: 15px;
+    width: 350px;
+    text-align: left;
+}
+.section .container .services .serv p{
+    padding-bottom: 2rem;
+}
+.section .container .second-content img{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    width: 650px;
+}
+.features .container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    column-gap: 10px;
+}
+.logo .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    gap: 10px;
+    margin-top: 5rem;
+}
+.logo .container img{
+    width: 120px;
+    margin: auto;
+}
+.download .container{
+    margin-top: 5rem;
+}
+footer .container{
+    height: 100px;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+footer .container .logo{
+    margin-top: 16px;
+    margin-left: 5rem;
+    width: 50px;
+}
+footer .container ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+footer .container ul li a{
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    font-weight: 300;
+}
+footer .container ul li a:hover{
+    color: hsl(171, 66%, 44%) ;
+}
+footer .container .icons i{
+    padding-top: 2rem;
+    margin-left: 15px;
+    
+}
+footer .container .icons i:hover{
+    color: hsl(171, 66%, 44%) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
