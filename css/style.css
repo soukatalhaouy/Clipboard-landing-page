@@ -1,74 +1,6 @@
 *{
     box-sizing: border-box;
 }
-/* Mobile */
-@media screen and (min-width: 576px){
-    .container{
-        width: 375px;
-        margin: auto;
-    }
-    .content{
-        width: 370px;
-    }
-    .header .container .images .desktop-header{
-        display: none;
-    }
-    .header .container .images .mobile-header{
-        display: block;
-        width: 375px;
-        height: 150px;
-    }
-    .header .container .content .logo{
-        width: 100px;
-    }
-    button{
-        border-radius: 25px;
-        width: 300px;
-    }
-    .section .container .services{
-        display: inline;
-    }
-    .section .container .services img{
-        width: 350px;
-    }
-    .section .container .services .serv{
-        width: 350px;
-        text-align: center;
-    }
-    .section .container .second-content img{
-        width: 350px;
-    }
-    .features .container{
-        display: block;
-    }
-    .features .container .feat{
-        padding-bottom: 2rem;
-    }
-    .logo .container {
-        display:block;
-    }
-    .logo .container img{
-        padding-top: 4rem;
-        width: 200px;
-    }
-    footer .container{
-        display: block;
-    }
-    footer .container .logo{
-        margin-left: 2rem;
-    }
-    footer .container ul{
-        display: block;
-    }
-    footer .container ul li a{
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 3;
-    }
-    footer .container .icons i{
-        margin-bottom: 2rem;
-    }
-}
 body{
     text-align: center;
     margin: 0;
@@ -76,9 +8,8 @@ body{
 }
 .container{
     position: relative;
-    width: 1200px;
+    width: 1200px;;
     overflow: hidden;
-    padding: auto;
     margin: auto;
 }
 .content{
@@ -136,15 +67,15 @@ p{
     padding-top: 3rem;
 }
 .section .container .services{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+      display: flex;
+    flex-wrap: wrap;
     margin-bottom: 5rem;
 }
 .section .container .services img{
     width: 650px;
 }
 .section .container .services .serv{
+    margin-left: 5rem;
     margin-top: 15px;
     width: 350px;
     text-align: left;
@@ -176,7 +107,7 @@ p{
     margin-top: 5rem;
 }
 footer .container{
-    height: 100px;
+    height: auto;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,17 +140,76 @@ footer .container .icons i{
 footer .container .icons i:hover{
     color: hsl(171, 66%, 44%) ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Mobile */
+@media (max-width: 375px){
+    .container{
+        width: 100%;
+    }
+    .content{
+        width: 360px;
+    }
+    .header .container .images .desktop-header{
+        display: none;
+    }
+    .header .container .images .mobile-header{
+        display: block;
+        width: 100%;
+        height: 150px;
+    }
+    .header .container .content{
+        position: relative;
+    }
+    .header .container .content .logo{
+        width: 80px;
+    }
+    button{
+        border-radius: 25px;
+        width: 300px;
+        padding: 15px;
+    }
+    .section .container .services{
+        display: inline;
+    }
+    .section .container .services img{
+        width: 330px;
+    }
+    .section .container .services .serv{
+        width: 350px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .section .container .second-content img{
+        width: 330px;
+    }
+    .features .container{
+        display: block;
+    }
+    .features .container .feat{
+        padding-bottom: 2rem;
+    }
+    .logo .container {
+        display:block;
+    }
+    .logo .container img{
+        padding-top: 4rem;
+        width: 200px;
+    }
+    footer .container{
+        display: block;
+    }
+    footer .container .logo{
+        width: 50px;
+        margin-left: 2rem;
+    }
+    footer .container ul{
+        display: block;
+    }
+    footer .container ul li a{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 3;
+    }
+    footer .container .icons i{
+        margin-bottom: 2rem;
+    }
+}
